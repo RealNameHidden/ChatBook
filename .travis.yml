@@ -1,0 +1,7 @@
+sudo: required
+services: 
+  - docker
+before_install:
+  - docker build -t dh008/chatbook -f Dockerfile.dev .
+script:
+  - docker run dh008/chatbook npm run test
