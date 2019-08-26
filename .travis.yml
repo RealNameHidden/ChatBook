@@ -14,8 +14,8 @@ deploy:
    bucket_name: "elasticbeanstalk-sa-east-1-417139012467"
    bucket_path: "docker-chatbook-env"
  
-  on: 
-    branch: master
-    access_key_id: "AWS_ACCESS_KEY"
+    on: 
+      branch: master
+    access_key_id: "$AWS_ACCESS_KEY"
     secret_access_key: "$AWS_SECRET_KEY"
     secure: "$AWS_SECRET_KEY"
