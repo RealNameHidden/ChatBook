@@ -8,9 +8,9 @@ script:
 
 deploy:
    provider: elasticbeanstalk
-   region: sa-east-1
+   region: "sa-east-1"
    app: "docker-chatbook-env"
-   env: "DockerChatbook-env "
+   env: "DockerChatbook-env"
    bucket_name: "elasticbeanstalk-sa-east-1-417139012467"
    bucket_path: "docker-chatbook-env"
  
