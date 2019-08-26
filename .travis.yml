@@ -7,14 +7,14 @@ script:
   - docker run dh008/chatbook npm run test
 
 deploy:
-   provider: elasticbeanstalk
-   region: "sa-east-1"
-   app: "docker-chatbook-env"
-   env: "DockerChatbook-env"
-   bucket_name: "elasticbeanstalk-sa-east-1-417139012467"
-   bucket_path: "docker-chatbook-env"
+  provider: elasticbeanstalk
+  region: "sa-east-1"
+  app: "docker-chatbook-env"
+  env: "DockerChatbook-env"
+  bucket_name: "elasticbeanstalk-sa-east-1-417139012467"
+  bucket_path: "docker-chatbook-env"
  
-  on: 
+  on:
     branch: master
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key:
